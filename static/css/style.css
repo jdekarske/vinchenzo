@@ -1,9 +1,12 @@
 nav {
-      background-color: yellow;
   list-style-type: none;
-  text-align: center; 
+  text-align: center;
 }
 
-.main-menu li{
-    display: inline-block;
+.main-menu li {
+  display: inline-block;
+}
+
+.content {
+
 }
