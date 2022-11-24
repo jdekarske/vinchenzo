@@ -42,9 +42,18 @@ nav a {
 }
 
 nav a:hover {
-  /*color: #A48D71;*/
   text-shadow: black;
-  animation: bounce;
+  animation-name: color-change;
+  animation-duration: 0.7s;
+}
+
+@keyframes color-change {
+    0% {
+        color: #7871A4;
+    }
+    100% {
+        color: white;
+    }
 }
 
 footer {
