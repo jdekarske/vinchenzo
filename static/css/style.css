@@ -1,4 +1,28 @@
+/*#A48D71 Taupe*/
+/*#71A499 Greyish Teal*/
+/*#7871A4 Dark Lavender*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+
+  /*TODO don't hardcode good dog*/
+  background-image: url("../images/vinny.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: add;
+  height: 100vh;
+}
+
 nav {
+  background-color: black;
+  /*background-color: #71a499;*/
+  opacity: 40%;
   list-style-type: none;
   text-align: center;
 }
@@ -7,6 +31,33 @@ nav {
   display: inline-block;
 }
 
-.content {
+footer {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
 
+.homepage-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  height: 100%;
+
+  color: #7871a4;
+}
+
+.homepage-content h1 {
+  font-size: 12em;
+}
+
+.homepage-content h2 {
+  font-size: 6em;
+}
+
+.homepage-content p {
+  font-size: 3em;
 }
