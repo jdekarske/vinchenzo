@@ -8,27 +8,43 @@
 }
 
 body {
-  margin: 0;
   font-family: "Roboto", sans-serif;
 
   /*TODO don't hardcode good dog*/
   background-image: url("../images/vinny.jpg");
   background-size: cover;
   background-position: center;
-  background-blend-mode: add;
   height: 100vh;
 }
 
 nav {
-  background-color: black;
-  /*background-color: #71a499;*/
-  opacity: 40%;
+  /*background-color: black;*/
+  align-content: center;
+  width: 100%;
+  background-color: rgb(255,255,255,0.5);
+}
+
+nav ul {
   list-style-type: none;
   text-align: center;
 }
 
-.main-menu li {
+nav ul > li {
   display: inline-block;
+  font-size: 2em;
+  margin: 0.1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #7871A4;
+  font-weight: bold;
+}
+
+nav a:hover {
+  /*color: #A48D71;*/
+  text-shadow: black;
+  animation: bounce;
 }
 
 footer {
