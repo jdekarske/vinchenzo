@@ -21,8 +21,10 @@ h1,
 h2,
 h3,
 h4,
+h5,
 a {
   color: #7871a4;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
 }
 
 p {
@@ -90,24 +92,24 @@ footer {
   color: #7871a4;
 }
 
-.homepage-content h1, h2, h3 {
-    text-shadow: 2px 2px 3px rgb(255, 255, 255);
-}
-
-.homepage-content h1 {
+h1 {
   font-size: 12em;
 }
 
-.homepage-content h2 {
+h2 {
   font-size: 6em;
 }
 
-.homepage-content h3 {
+h3 {
   font-size: 3em;
 }
 
-.homepage-content p {
-  font-size: 3em;
+h4 {
+  font-size: 2em;
+}
+
+h5 {
+  font-size: 1em;
 }
 
 .main-wrapper {
@@ -122,11 +124,23 @@ footer {
   grid-row: 1;
   background-color: rgb(256, 256, 256, 0.8);
   padding: 10px;
-    list-style: none;
+  list-style: none;
 }
 
 .main-article {
   grid-column: 1/3;
   background-color: rgb(256, 256, 256, 0.8);
   padding: 10px;
+}
+
+.main-article h1 {
+  font-size: 2em;
+}
+
+.section-articles {
+  grid-column: 1/3;
+  grid-row: 2;
+  background-color: rgb(256, 256, 256, 0.8);
+  padding: 10px;
+  list-style: none;
 }

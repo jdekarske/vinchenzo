@@ -7,5 +7,15 @@
     </header>
     {{.Content}}
   </article>
+  <ul class="section-articles">
+    {{ range .Pages }}
+    <li>
+      <a href="{{.Permalink}}">
+        <h4>{{.Date.Format "2006-01-02"}} | {{.Title}}</h4>
+        <p>{{.Summary}}</p>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
 </main>
 {{ end }}
