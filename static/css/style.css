@@ -31,10 +31,6 @@ p {
   color: black;
 }
 
-a {
-  text-decoration: none;
-}
-
 nav {
   /*background-color: black;*/
   align-content: center;
@@ -114,33 +110,30 @@ h5 {
 
 .main-wrapper {
   margin: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .other-articles {
-  grid-column: 3;
-  grid-row: 1;
   background-color: rgb(256, 256, 256, 0.8);
   padding: 10px;
+  margin: 10px;
   list-style: none;
 }
 
 .main-article {
-  grid-column: 1/3;
   background-color: rgb(256, 256, 256, 0.8);
   padding: 10px;
+  margin: 10px;
 }
 
 .main-article h1 {
   font-size: 2em;
 }
 
-.section-articles {
-  grid-column: 1/3;
-  grid-row: 2;
+.section-article {
   background-color: rgb(256, 256, 256, 0.8);
   padding: 10px;
+  margin: 10px;
   list-style: none;
 }

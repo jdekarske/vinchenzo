@@ -1,5 +1,5 @@
 {{ define "main" }}
-<!--same as list, without suggested articles-->
+<!--don't suggest articles when you have a list-->
 <main class="main-wrapper">
   <article class="main-article">
     <header>
@@ -7,15 +7,13 @@
     </header>
     {{.Content}}
   </article>
-  <ul class="section-articles">
     {{ range .Pages }}
-    <li>
+    <div class="section-article">
       <a href="{{.Permalink}}">
         <h4>{{.Date.Format "2006-01-02"}} | {{.Title}}</h4>
         <p>{{.Summary}}</p>
       </a>
-    </li>
+    </div>
     {{ end }}
-  </ul>
 </main>
 {{ end }}
