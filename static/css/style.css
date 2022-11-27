@@ -9,9 +9,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-
-  /*TODO don't hardcode good dog*/
-  background-image: url("../images/vinny.jpg");
+  background-image: url("../images/background.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
