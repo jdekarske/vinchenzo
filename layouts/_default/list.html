@@ -7,13 +7,13 @@
     </header>
     {{.Content}}
   </article>
-    {{ range .Pages }}
-    <div class="section-article">
-      <a href="{{.Permalink}}">
-        <h4>{{.Date.Format "2006-01-02"}} | {{.Title}}</h4>
-        <p>{{.Summary}}</p>
-      </a>
-    </div>
-    {{ end }}
+  {{ range .Pages }}
+  <div class="section-article">
+    <a href="{{.Permalink}}">
+      <h2>{{.Date.Format "2006-01-02"}} | {{.Title}}</h2>
+      <p>{{.Summary}}</p>
+    </a>
+  </div>
+  {{ end }}
 </main>
 {{ end }}

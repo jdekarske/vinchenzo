@@ -19,25 +19,36 @@ h1,
 h2,
 h3,
 h4,
-h5,
-a {
+h5 {
   color: #7871a4;
   text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+
+a {
+  color: #7871a4;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 p {
   color: black;
 }
 
+ul {
+  list-style-type: none;
+}
+
+ol {
+  list-style-position: inside;
+}
+
 nav {
-  /*background-color: black;*/
   align-content: center;
   width: 100%;
   background-color: rgb(255, 255, 255, 0.8);
 }
 
 nav ul {
-  list-style-type: none;
   text-align: center;
 }
 
@@ -45,12 +56,6 @@ nav ul > li {
   display: inline-block;
   font-size: 2em;
   margin: 0.1em;
-}
-
-a {
-  text-decoration: none;
-  color: #7871a4;
-  font-weight: bold;
 }
 
 a:hover {
@@ -80,34 +85,24 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 20px;
   height: 100%;
-
-  color: #7871a4;
 }
 
-h1 {
+.homepage-content h1 {
   font-size: 12em;
 }
 
-h2 {
+.homepage-content h2 {
   font-size: 6em;
 }
 
-h3 {
+.homepage-content h3 {
   font-size: 3em;
 }
 
-h4 {
-  font-size: 2em;
-}
-
-h5 {
-  font-size: 1em;
-}
-
 .main-wrapper {
-  margin: 10px;
+  margin: auto;
+  width: 60vw;
   display: flex;
   flex-direction: column;
 }
@@ -116,7 +111,6 @@ h5 {
   background-color: rgb(256, 256, 256, 0.8);
   padding: 10px;
   margin: 10px;
-  list-style: none;
 }
 
 .main-article {

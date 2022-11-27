@@ -6,14 +6,16 @@
         </header>
         {{.Content}}
     </article>
-    <ul class="other-articles">
-    <!-- Ranges through content/*.md -->
-    <h5>Check out some other articles</h5>
-    {{ range .Site.RegularPages }}
-        <li>
-            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-        </li>
-    {{ end }}
-    </ul>
+    <div class="other-articles">
+        <h1>Other Articles</h1>
+        <ul>
+        <!-- Ranges through content/*.md -->
+        {{ range first 5 .Site.RegularPages }}
+            <li>
+                <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+            </li>
+        {{ end }}
+        </ul>
+    </div>
 </main>
 {{ end }}
