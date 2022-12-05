@@ -59,6 +59,16 @@ nav ul > li {
   margin: 0.1em;
 }
 
+footer {
+  align-content: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.8);
+}
+
+footer p {
+    color: #7871a4;
+}
+
 a:hover {
   animation-name: color-change;
   animation-duration: 0.7s;
