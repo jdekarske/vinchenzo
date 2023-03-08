@@ -1,4 +1,5 @@
 /*#A48D71 Taupe*/
+/*#eddcc7 Taupe for background*/
 /*#71A499 Greyish Teal*/
 /*#7871A4 Dark Lavender*/
 
@@ -23,6 +24,8 @@ h3,
 h4,
 h5 {
   color: #7871a4;
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-shadow: 2px 2px 3px rgb(255, 255, 255);
 }
 
@@ -33,7 +36,8 @@ a {
 }
 
 p {
-  color: black;
+  color: #333;
+  margin: 0 0 10px
 }
 
 ul {
@@ -47,7 +51,6 @@ ol {
 nav {
   align-content: center;
   width: 100%;
-  background-color: rgb(255, 255, 255, 0.8);
 }
 
 nav ul {
@@ -63,7 +66,6 @@ nav ul > li {
 footer {
   align-content: center;
   width: 100%;
-  background-color: rgb(255, 255, 255, 0.8);
 }
 
 footer p {
@@ -117,6 +119,10 @@ footer {
   font-size: 3em;
 }
 
+.translucent {
+  background-color: rgb(242, 236, 230, 0.8);
+}
+
 .main-wrapper {
   margin: auto;
   width: 60vw;
@@ -125,13 +131,11 @@ footer {
 }
 
 .other-articles {
-  background-color: rgb(256, 256, 256, 0.8);
   padding: 10px;
   margin: 10px;
 }
 
 .main-article {
-  background-color: rgb(256, 256, 256, 0.8);
   padding: 10px;
   margin: 10px;
 }
@@ -141,7 +145,6 @@ footer {
 }
 
 .section-article {
-  background-color: rgb(256, 256, 256, 0.8);
   padding: 10px;
   margin: 10px;
   list-style: none;

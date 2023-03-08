@@ -1,14 +1,14 @@
 {{ define "main" }}
 <!--don't suggest articles when you have a list-->
 <main class="main-wrapper">
-  <article class="main-article">
+  <article class="main-article translucent">
     <header>
       <h1>{{.Title}}</h1>
     </header>
     {{.Content}}
   </article>
   {{ range .Pages }}
-  <div class="section-article">
+  <div class="section-article translucent">
     <a href="{{.Permalink}}">
       <h2>{{.Date.Format "2006-01-02"}} | {{.Title}}</h2>
       <p>{{.Summary}}</p>
