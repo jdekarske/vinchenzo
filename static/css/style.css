@@ -84,6 +84,11 @@ a:hover {
   }
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 footer {
   position: fixed;
   width: 100vw;
