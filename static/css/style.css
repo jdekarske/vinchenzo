@@ -3,11 +3,6 @@
 /*#71A499 Greyish Teal*/
 /*#7871A4 Dark Lavender*/
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-display: swap;
@@ -24,9 +19,15 @@ h3,
 h4,
 h5 {
   color: #7871a4;
-  margin-top: 20px;
   margin-bottom: 10px;
   text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+
+.homepage-content
+h1,
+h2,
+h3 {
+  margin-top: 20px;
 }
 
 a {
@@ -40,8 +41,12 @@ p {
   margin: 0 0 10px
 }
 
-ul {
+.other-articles ul {
   list-style-type: none;
+}
+
+li {
+  color: #333;
 }
 
 ol {

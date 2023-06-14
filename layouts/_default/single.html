@@ -1,21 +1,21 @@
 {{ define "main" }}
 <main class="main-wrapper">
-    <article class="main-article translucent">
-        <header>
-            <h1>{{.Title}}</h1>
-        </header>
-        {{.Content}}
-    </article>
-    <div class="other-articles translucent">
-        <h1>Other Articles</h1>
-        <ul>
-        <!-- Ranges through content/*.md -->
-        {{ range first 5 .Site.RegularPages }}
-            <li>
-                <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-            </li>
-        {{ end }}
-        </ul>
-    </div>
+  <article class="main-article translucent">
+    <header>
+      <h1>{{.Title}}</h1>
+    </header>
+    {{.Content}}
+  </article>
+  <div class="other-articles translucent">
+    <h1>Other Articles</h1>
+    <ul>
+      <!-- Ranges through content/*.md -->
+      {{ range first 5 .Site.RegularPages }}
+      <li>
+        <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
 </main>
 {{ end }}
