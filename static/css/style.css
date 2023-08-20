@@ -23,11 +23,12 @@ h5 {
   text-shadow: 2px 2px 3px rgb(255, 255, 255);
 }
 
+/* I'm not sure why this is here, but it makes the list look bad */
 .homepage-content
 h1,
 h2,
 h3 {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 a {
@@ -92,8 +93,11 @@ a:hover {
 }
 
 img {
-  width: 100%;
+  width: 90%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
