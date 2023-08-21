@@ -1,12 +1,12 @@
 {{ define "main" }}
-<main aria-role="main">
+<main class="main-wrapper animate__animated animate__fadeInUp">
     <div class="homepage-content">
         <h1>404</h1>
         <h3><a href="/">Go back to the home page</a></h3>
         <h3>↓↓↓ or try one of these ↓↓↓</h3>
     </div>
   {{ range first 2 .Pages }}
-  <div class="section-article">
+  <div class="section-article translucent">
     <a href="{{.Permalink}}">
       <h2>{{.Date.Format "2006-01-02"}} | {{.Title}}</h2>
       <p>{{.Summary}}</p>
