@@ -6,6 +6,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-display: swap;
+  background-color: #8b898c;
   background-image: url("../images/background.webp");
   background-size: cover;
   background-position: center;
