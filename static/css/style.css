@@ -20,16 +20,9 @@ h3,
 h4,
 h5 {
   color: #7871a4;
+  margin-top: 0px;
   margin-bottom: 10px;
   text-shadow: 2px 2px 3px rgb(255, 255, 255);
-}
-
-/* I'm not sure why this is here, but it makes the list look bad */
-.homepage-content
-h1,
-h2,
-h3 {
-  margin-top: 0px;
 }
 
 a {
@@ -45,6 +38,10 @@ p {
 
 .other-articles ul {
   list-style-type: none;
+}
+
+ul {
+  padding: 0px;
 }
 
 li {
@@ -168,7 +165,7 @@ footer {
   }
 
   .main-wrapper {
-    width: 100vw;
+    width: 98vw;
   }
 
   .homepage-content h1 {
