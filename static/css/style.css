@@ -61,7 +61,9 @@ nav ul {
 nav ul > li {
   display: inline-block;
   font-size: 2em;
-  margin: 0.1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  /* margin: 0.3em; */
 }
 
 footer {
