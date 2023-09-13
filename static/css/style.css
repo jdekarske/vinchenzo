@@ -36,12 +36,9 @@ p {
   margin: 0 0 10px
 }
 
-.other-articles ul {
-  list-style-type: none;
-}
-
 ul {
   padding: 0px;
+  list-style-type: none;
 }
 
 li {
@@ -74,6 +71,10 @@ footer {
 
 footer p {
     color: #7871a4;
+}
+
+picture {
+  margin: 10em;
 }
 
 a:hover {
