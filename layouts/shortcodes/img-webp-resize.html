@@ -1,12 +1,14 @@
-{{ $src := $.Get "src"}}
+{{ $src := $.Get "src" }}
 {{ $size := $.Get "size" | default "300x" }}
 
 <!-- Get image -->
 {{ $img := resources.Get $src }}
 
 <!-- Resize image as a test it's working -->
-{{ $newImage := $img.Resize (printf "%s %s" $size " webp")}}
+{{ $newImage := $img.Resize (printf "%s %s" $size " webp") }}
 
 <picture>
-  <img src="{{ $newImage.Permalink }}" alt="{{ $src }}" style="width:auto;">
+  <a href="{{ $img.Permalink }}" target="_blank">
+    <img src="{{ $newImage.Permalink }}" alt="{{ $src }}" style="width:auto;">
+  </a>
 </picture>
