@@ -1,4 +1,9 @@
 <footer class="translucent">
-    <p>&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+  {{ if .Site.Params.github }}
+  <a href="https://www.github.com/{{ .Site.Params.github }}">GitHub</a>
+  {{ end }}
+  {{ if .Site.Params.linkedin }}
+  <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}">Linkedin</a>
+  {{ end }}
+  <p>&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p>
 </footer>
-
