@@ -1,0 +1,9 @@
+{{ $src := $.Get "src" }}
+{{ $size := $.Get "size" | default "300x" }}
+
+<!-- Get video -->
+{{ $img := resources.Get $src }}
+
+<video width="{{$size}}" controls>
+    <source src="{{ $img.Permalink }}" type="video/mp4">
+</video>
