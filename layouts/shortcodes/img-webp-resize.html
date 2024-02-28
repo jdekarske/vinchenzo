@@ -1,14 +1,20 @@
 {{ $src := $.Get "src" }}
 {{ $size := $.Get "size" | default "300x" }}
 
-<!-- Get image -->
-{{ $img := resources.Get $src }}
+<!-- Attempt to get the image from the page directory -->
+{{ $pageImage := .Page.Resources.GetMatch $src }}
+
+<!-- If image not found in the page directory, get it from the assets directory -->
+{{ if not $pageImage }}
+    {{ $pageImage = resources.Get $src }}
+{{ end }}
 
 <!-- Resize image as a test it's working -->
-{{ $newImage := $img.Resize (printf "%s %s" $size " webp") }}
+{{ $newImage := $pageImage.Resize (printf "%s %s" $size " webp") }}
 
 <picture>
-  <a href="{{ $img.Permalink }}" target="_blank">
+  <a href="{{ $pageImage.Permalink }}" target="_blank">
     <img src="{{ $newImage.Permalink }}" alt="{{ $src }}" style="width:auto;">
   </a>
 </picture>
+
