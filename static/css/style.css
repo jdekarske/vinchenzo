@@ -75,8 +75,8 @@ footer p {
     color: #7871a4;
 }
 
-picture video {
-  margin: 10em;
+picture, video {
+  margin: 2em;
 }
 
 a:hover {

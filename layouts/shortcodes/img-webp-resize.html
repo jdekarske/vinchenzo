@@ -9,6 +9,22 @@
     {{ $pageImage = resources.Get $src }}
 {{ end }}
 
+{{ if not $pageImage }}
+
+	{{ $dimensions := split $size "x" }}
+
+	{{ $width := index $dimensions 0 }}
+	{{ $height := index $dimensions 1 }}
+
+	{{ $style := printf "width: %spx; height: %spx;" $width $height }}
+
+	<picture>
+		<a href="{{ $src }}" target="_blank">
+			<img src="{{ $src }}" alt="{{ $src }}" style="width: {{ $width }}px; height: {{ $height }}px;">
+		</a>
+	</picture>
+{{ else }}
+
 <!-- Resize image as a test it's working -->
 {{ $newImage := $pageImage.Resize (printf "%s %s" $size " webp") }}
 
@@ -18,3 +34,4 @@
   </a>
 </picture>
 
+{{ end }}
