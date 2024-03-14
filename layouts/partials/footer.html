@@ -1,10 +1,12 @@
 <footer class="translucent">
+  <a href="/nocookies">No Cookies</a>
   {{ if .Site.Params.github }}
+	•
   <a href="https://www.github.com/{{ .Site.Params.github }}">GitHub</a>
   {{ end }}
   {{ if .Site.Params.linkedin }}
+	•
   <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}">Linkedin</a>
   {{ end }}
-  <a href="/nocookies">No Cookies</a>
   <p>&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p>
 </footer>
