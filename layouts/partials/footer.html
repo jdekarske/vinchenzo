@@ -1,4 +1,5 @@
 <footer class="translucent">
+	<p>
   <a href="/nocookies">No Cookies</a>
   {{ if .Site.Params.github }}
 	•
@@ -8,5 +9,6 @@
 	•
   <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}">Linkedin</a>
   {{ end }}
+	</p>
   <p>&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p>
 </footer>
