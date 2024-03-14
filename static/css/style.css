@@ -4,6 +4,10 @@
 /*#7871A4 Dark Lavender*/
 
 body {
+  min-height: 100vh;
+  margin:0;
+  display:flex;
+  flex-direction:column;
   font-family: "Roboto", sans-serif;
   font-display: swap;
   background-color: #8b898c;
@@ -12,6 +16,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+main {
+  flex:1;
 }
 
 h1,
@@ -66,7 +74,10 @@ nav ul > li {
   /* margin: 0.3em; */
 }
 
+article{ flex:1; }
+
 footer {
+  text-align: center;
   align-content: center;
   width: 100%;
 }
@@ -107,11 +118,6 @@ video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-footer {
-  width: 100%;
-  text-align: center;
 }
 
 .homepage-content {
