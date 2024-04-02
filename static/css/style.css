@@ -120,6 +120,14 @@ video {
   margin-right: auto;
 }
 
+pre {
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 0;
+    margin-bottom: 1em;
+    overflow: auto;
+}
+
 .homepage-content {
   display: flex;
   flex-direction: column;
@@ -142,6 +150,7 @@ video {
 
 .translucent {
   background-color: rgb(242, 236, 230, 0.8);
+  border-radius: 0.5em;
 }
 
 .main-wrapper {
