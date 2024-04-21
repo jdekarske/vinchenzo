@@ -4,6 +4,6 @@
 <!-- Get video -->
 {{ $img := resources.Get $src }}
 
-<video width="{{$size}}" controls>
+<video preload=none width="{{$size}}" controls>
     <source src="{{ $img.Permalink }}" type="video/mp4">
 </video>
